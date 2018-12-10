@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import ScreensMainList from './Todo/List';
 
-export default class App extends Component {
+export default class ScreensRoot extends Component {
   render() {
     return (
       <BrowserRouter>
         <>
-          <Route path="/" component={HomePage} />
+          <Route path="/" component={ScreensMainList} />
         </>
       </BrowserRouter>
     );
